@@ -4,17 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holobox Leitfaden 2025</title>
-    <!-- Tailwind CDN für sofortige Ästhetik im Prototyp -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            // Hier könnten wir Tailwind-Erweiterungen hinzufügen, falls nötig
-          }
-        }
-      }
-    </script>
   <script type="importmap">
 {
   "imports": {
@@ -29,10 +18,8 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-slate-50 text-slate-800 font-sans antialiased">
+  <body>
     <div id="root"></div>
-    <!-- WICHTIG: Kein führender Slash vor index.tsx für bessere Kompatibilität -->
-    <script type="module" src="index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
