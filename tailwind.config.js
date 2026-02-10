@@ -2,8 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./App.tsx",
     "./index.tsx",
+    "./App.tsx",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./constants.tsx",
     "./theme.ts",
@@ -13,6 +13,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
