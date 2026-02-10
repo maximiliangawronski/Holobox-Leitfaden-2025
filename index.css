@@ -1,4 +1,4 @@
-/* Custom scrollbar for webkit */
+/* Custom scrollbar for webkit (funktioniert auch ohne Tailwind-Compiler) */
 ::-webkit-scrollbar {
   width: 8px;
 }
