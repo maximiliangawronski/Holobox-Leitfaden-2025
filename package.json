@@ -3,20 +3,26 @@
   "name": "holobox-leitfaden-2025",
   "version": "1.1.0",
   "description": "Interaktiver Leitfaden für die Gestaltung von Holobox-Lehrszenarien (Maximilian Gawronski)",
-  "main": "index.html",
+  "type": "module",
   "scripts": {
-    "start": "npx browser-sync start --server --files '**/*.tsx, **/*.ts, index.html' --no-notify",
-    "serve": "npx serve .",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.460.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.0"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
   },
-  "keywords": [
-    "holobox",
-    "holography",
-    "education"
-  ],
   "author": "Maximilian Gawronski",
   "license": "MIT"
 }
